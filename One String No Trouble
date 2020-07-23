@@ -1,0 +1,20 @@
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+	string s;
+	int i,size,count=1,c=0,v=0;
+	cin >> s;
+	size=s.length();
+	for(i=0 ; i < (size-1) ; i++)
+	{
+		if(s[i]!=s[i+1])
+		count++;
+		if(s[i]==s[i+1])
+		{
+			c=max(c,count);
+		    count=1;
+		}
+	}
+	cout << max(count,c) ;
+}
