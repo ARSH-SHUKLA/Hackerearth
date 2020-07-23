@@ -1,0 +1,23 @@
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+	int T;
+	cin >> T;
+	while(T--)
+	{
+	    long long c, n, sum=0, x;
+		cin >> c >> n;
+		sum=(n*(n+1))/2;
+		if(sum>c)
+		{
+			cout << c << endl;
+		}
+		else
+		{
+            x=(c-sum);
+			n=x%n;
+			cout << n << endl;
+		}
+	}
+}
