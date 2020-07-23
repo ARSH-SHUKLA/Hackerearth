@@ -1,0 +1,15 @@
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+	int T;
+	cin >> T;
+	while(T--)
+	{
+		long long a,b;
+		int res=0;
+		cin >> a >> b;
+		res=max(a,b)/min(a,b);
+		cout << res << endl;
+	}
+}
